@@ -1,0 +1,422 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#151817",
+		"selectedColor": "#5D7291",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/home",
+				"iconPath": "static/tarbar/home.png",
+				"selectedIconPath": "static/tarbar/home_active.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/tabBar/shop",
+				"iconPath": "static/tarbar/shop.png",
+				"selectedIconPath": "static/tarbar/shop_active.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/tabBar/message",
+				"iconPath": "static/tarbar/message.png",
+				"selectedIconPath": "static/tarbar/message_active.png",
+				"text": "留言服务员"
+			},
+
+			{
+				"pagePath": "pages/tabBar/mine",
+				"iconPath": "static/tarbar/mine.png",
+				"selectedIconPath": "static/tarbar/mine_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#282828",
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle":"white"
+			}
+
+		}, {
+			"path": "pages/tabBar/shop",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#282828",
+				"navigationBarTextStyle":"white"
+			}
+
+		}, {
+			"path": "pages/tabBar/message",
+			"style": {
+				"navigationBarBackgroundColor": "#282828",
+				"navigationBarTextStyle":"white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabBar/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		}
+
+		, {
+			"path": "pages/fishCharge/fishCharge",
+			"style": {
+				"navigationBarTitleText": "开钓付费",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/fishCharge/changeLocation",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#282828",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle":"white"
+			}
+
+		}, {
+			"path": "pages/fishCharge/orderCharge",
+			"style": {
+				"navigationBarTitleText": "订单支付",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/dynamicRank/dynamicRank",
+			"style": {
+				"navigationBarTitleText": "动态排行榜",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/matchOrder/matchOrder",
+			"style": {
+				"navigationBarTitleText": "比赛预约",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		},{
+			"path": "pages/matchOrder/activityDetail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/matchOrder/oldRank",
+			"style": {
+				"navigationBarTitleText": "往期排行榜",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/mine/privateRule",
+			"style": {
+				"navigationBarTitleText": "隐私协议",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/collect",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/mine/huiYuBalance",
+			"style": {
+				"navigationBarTitleText": "回鱼记录",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/coupon",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/shop/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/shop/order",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/myOrder",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/mine/subOrder",
+			"style": {
+				"navigationBarTitleText": "预约订单",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/staff/staff",
+			"style": {
+				"navigationBarTitleText": "员工端",
+				"navigationBarBackgroundColor": "#000000",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle":"white"
+			}
+
+		}, {
+			"path": "pages/staff/messageList",
+			"style": {
+				"navigationBarTitleText": "留言列表",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/staff/messageDetail",
+			"style": {
+				"navigationBarTitleText": "留言详情",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/userOrderList",
+			"style": {
+				"navigationBarTitleText": "订单列表",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/userOrderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/shopOrder",
+			"style": {
+				"navigationBarTitleText": "用户订单详情",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/userList",
+			"style": {
+				"navigationBarTitleText": "预约比赛用户列表",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/staff/activityList",
+			"style": {
+				"navigationBarTitleText": "比赛列表",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/matchOperate",
+			"style": {
+				"navigationBarTitleText": "他的成绩",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/staff/matchActivity",
+			"style": {
+				"navigationBarTitleText": "比赛活动",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/login/bindPhone",
+			"style": {
+				"navigationBarTitleText": "获取手机号",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/mine/shopOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商城订单",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/staff/ordersForGoods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品订单",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/staff/goodsDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品订单",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/rankingList/rankingList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "往期排行榜",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/matchOrder/shakyList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "比赛预约",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+       
+        ,{
+            "path" : "pages/mine/order-payment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/shopAccomplish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/dynamicRank/oldFishNumber",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "往期放鱼数量",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/staff/releaseFish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "今日放鱼",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+      
+        ,{
+            "path" : "pages/staff/orderManagement",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单管理",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+       
+       
+        ,{
+            "path" : "pages/staff/fishPondCenter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "鱼塘数据中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/staff/shopCentralManagement",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/staff/couponCenter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "优惠卷中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "钓鱼塘",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
